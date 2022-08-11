@@ -3,8 +3,17 @@ body {
   padding: 0;
   margin: 0;
   font-size: 10px;
+  color: #25262b;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+h2{
+  margin: 0;
+}
+
+p{
+  font-size: 1.6rem;
+  margin: 0;
 }
 
 a {
@@ -21,7 +30,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: black;
+    background: white;
   }
 }

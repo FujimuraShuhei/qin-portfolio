@@ -13,7 +13,9 @@ export const Header = () => {
     <header className={styles.header}>
       <Burger className="{styles.}" opened={opened} onClick={() => setOpened((o) => !o)} title={title} />
       <h1 className={styles.logo}>Shuhei Univercity</h1>
-      <IconMoonStars />
+      <IconMoonStars className={styles.moonicon} />
     </header>
   );
 };
+
+export default Header;
