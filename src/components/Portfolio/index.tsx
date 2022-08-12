@@ -1,11 +1,53 @@
-import React from 'react'
+import { AspectRatio, Button, Container, Image } from '@mantine/core';
+import React from 'react';
+import styles from 'src/styles/Portfolio.module.css';
 
- export const Portfolio = () => {
-  return (
-    <section className='blog'>
-      <Container size='lg' className="blog_container">
-        <h2 className=""></h2>
-      </Container>
-      </section>
-  )
+interface PORTFOLIO {
+  title: string;
+  description: string;
+  date: string;
 }
+
+const PORTFOLIO = [
+  {
+    title: 'IT KINGDOM',
+    description:
+      '当サロンのLPページ。React、Next.js、TypeScriptなどのモダンな技術を用いて作られています。初心者にちょうど良い難易度の制作物です。',
+    date: '2021.1 - 2021.12',
+  },
+  {
+    title: 'IT KINGDOM',
+    description:
+      '当サロンのLPページ。React、Next.js、TypeScriptなどのモダンな技術を用いて作られています。初心者にちょうど良い難易度の制作物です。',
+    date: '2021.1 - 2021.12',
+  },
+  {
+    title: 'IT KINGDOM',
+    description:
+      '当サロンのLPページ。React、Next.js、TypeScriptなどのモダンな技術を用いて作られています。初心者にちょうど良い難易度の制作物です。',
+    date: '2021.1 - 2021.12',
+  },
+];
+
+export const Portfolio = () => {
+  return (
+    <section className='portfolio'>
+      <Container size='lg' className='portfolio_container'>
+        <h2 className={styles.portfolio_h2}>Portfolio</h2>
+        {PORTFOLIO.map((portfolio) => {
+          return (
+            <div className={styles.portfolio_box}>
+              <AspectRatio ratio={2 / 1}>
+                <Image fit='contain' src='yakei01.jpg' />
+              </AspectRatio>
+              <h3 className={styles.portfolio_title}>{portfolio.title}</h3>
+              <p className={styles.portfolio_description}>{portfolio.description}</p>
+              <p className={styles.portfolio_date}>{portfolio.date}</p>
+            </div>
+          );
+        })}
+        <Button className={styles.portfolio_button} color='dark' radius='xl' size='md'>View All</Button>
+      </Container>
+    </section>
+  );
+};
