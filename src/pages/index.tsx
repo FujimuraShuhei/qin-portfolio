@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Header } from 'src/components/Header/Header';
-import { mainVisual } from 'src/components/mainVisual/mainVisual';
+import { MainVisual } from 'src/components/MainVisual';
 import { MdFacebook } from 'react-icons/md';
 import { FaTwitter, FaRss } from 'react-icons/fa';
 
@@ -41,6 +41,7 @@ const Home = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
+      <MainVisual />
       <section className={styles.mainVisual_box}>
         <div className={styles.mainVisual_contents}>
           <div className={styles.mainVisual_content}>

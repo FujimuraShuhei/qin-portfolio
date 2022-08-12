@@ -3,7 +3,7 @@ import styles from 'src/styles/mainVisual.module.css';
 import { MdFacebook } from 'react-icons/md';
 import { FaRss, FaTwitter } from 'react-icons/fa';
 
-export const mainVisual = () => {
+export const MainVisual: React.FC = () => {
   return (
     <div className={styles.mainVisual_box}>
       <div className={styles.mainVisual_contents}>
@@ -26,5 +26,3 @@ export const mainVisual = () => {
     </div>
   );
 };
-
-export default mainVisual;
