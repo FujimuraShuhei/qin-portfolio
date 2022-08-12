@@ -1,5 +1,39 @@
-.box {
+.mainVisual_container {
+ margin: 0;
+}
+.mainVisual_box {
   width: 100%;
   height: 248px;
-  background: #E64980;
+  background: #e64980;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.mainVisual_contents {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  flex-flow: column;
+}
+.mainVisual_content {
+  margin-bottom: 30px;
+}
+.mainVisual_content h2 {
+  margin-bottom: 4px;
+}
+.mainVisual_contents ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.mainVisual_contents li svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+
+.mainVisual_contents h2 {
+  font-size: 2.8rem;
 }

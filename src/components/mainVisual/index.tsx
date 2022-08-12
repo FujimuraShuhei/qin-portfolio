@@ -1,28 +1,31 @@
 import React from 'react';
-import styles from 'src/styles/mainVisual.module.css';
+import styles from 'src/styles/MainVisual.module.css';
 import { MdFacebook } from 'react-icons/md';
 import { FaRss, FaTwitter } from 'react-icons/fa';
+import { Container } from '@mantine/core';
 
 export const MainVisual: React.FC = () => {
   return (
-    <div className={styles.mainVisual_box}>
-      <div className={styles.mainVisual_contents}>
-        <div className={styles.mainVisual_content}>
-          <h2>Shuhei University</h2>
-          <p>しゅーへいのポートフォリオページです</p>
+    <section className={styles.mainVisual_box}>
+      <Container className={styles.mainVisual_container}>
+        <div className={styles.mainVisual_contents}>
+          <div className={styles.mainVisual_content}>
+            <h2>Shuhei University</h2>
+            <p>しゅーへいのポートフォリオページです</p>
+          </div>
+          <ul>
+            <li>
+              <FaTwitter />
+            </li>
+            <li>
+              <MdFacebook />
+            </li>
+            <li>
+              <FaRss />
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <FaTwitter />
-          </li>
-          <li>
-            <MdFacebook />
-          </li>
-          <li>
-            <FaRss />
-          </li>
-        </ul>
-      </div>
-    </div>
+      </Container>
+    </section>
   );
 };
