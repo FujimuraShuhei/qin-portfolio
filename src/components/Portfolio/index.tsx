@@ -41,7 +41,7 @@ export const Portfolio = () => {
           return (
             <div key={portfolio.id} className={styles.portfolio_box}>
               <AspectRatio ratio={2 / 1}>
-                <Image fit='contain' src='yakei01.jpg' />
+                <Image fit='contain' src='yakei01.jpg' alt='ポートフォリオコンテンツ' />
               </AspectRatio>
               <h3 className={styles.portfolio_title}>{portfolio.title}</h3>
               <p className={styles.portfolio_description}>{portfolio.description}</p>
