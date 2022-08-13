@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <Container>
       <footer className={styles.footer}>
-        <p>© ️2022 Shimabu IT University</p>
+          <p>© ️2022 Shimabu IT University</p>
       </footer>
     </Container>
   );
