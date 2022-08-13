@@ -1,0 +1,14 @@
+.footer {
+  color: #868E96;
+  font-family: 'YuGothic';
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #E9ECEF;;
+}
+.footer p {
+  font-size: 1.0rem;
+  padding: 25px 0;
+  margin: 40px 106px 34px;
+}
