@@ -32,7 +32,7 @@ const BLOG = [
 export const Blog: React.FC = () => {
   return (
     <section className='blog'>
-      <Container size='lg' className="blog_container">
+      <Container size='lg' className="section_container">
         <h2 className={styles.blog_h2}>Blog</h2>
         {BLOG.map((blog) => {
           return (
