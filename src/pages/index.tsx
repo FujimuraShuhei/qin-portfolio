@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { MainVisual } from 'src/components/MainVisual';
+import { Mainvisual } from 'src/components/Mainvisual';
 import { Blog } from 'src/components/Blog';
 import { Portfolio } from 'src/components/Portfolio';
 import { Github } from 'src/components/Github';
@@ -14,7 +14,7 @@ const Home = () => {
         <meta name='description' content='shuhei_portfolio' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <MainVisual />
+      <Mainvisual />
       <Blog />
       <Portfolio />
       <Github />

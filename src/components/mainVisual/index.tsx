@@ -4,7 +4,7 @@ import { MdFacebook } from 'react-icons/md';
 import { FaRss, FaTwitter } from 'react-icons/fa';
 import { Container } from '@mantine/core';
 
-export const MainVisual: React.FC = () => {
+export const Mainvisual: React.FC = () => {
   return (
     <section className={styles.mainVisual_box}>
       <Container className={styles.mainVisual_container}>
