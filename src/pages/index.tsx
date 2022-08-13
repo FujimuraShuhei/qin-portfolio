@@ -19,7 +19,6 @@ const Home = () => {
       <Portfolio />
       <Github />
       <Twitter />
-      
     </div>
   );
 };
