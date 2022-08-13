@@ -1,6 +1,6 @@
-import { Button, Container, Loader } from '@mantine/core';
+import { Container, Loader } from '@mantine/core';
 import styles from 'src/styles/Blog.module.css';
-import React from 'react'
+import React from 'react';
 
 const BLOG = [
   {
@@ -75,7 +75,7 @@ const BLOG = [
   },
 ];
 
-const blog:React.FC = () => {
+const blog: React.FC = () => {
   return (
     <section className='blog'>
       <Container size='lg' className='section_container'>
@@ -95,6 +95,6 @@ const blog:React.FC = () => {
       </Container>
     </section>
   );
-}
+};
 
 export default blog;

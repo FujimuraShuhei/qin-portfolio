@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'src/styles/MainVisual.module.css';
+import styles from 'src/styles/Mainvisual.module.css';
 import { MdFacebook } from 'react-icons/md';
 import { FaRss, FaTwitter } from 'react-icons/fa';
 import { Container } from '@mantine/core';
