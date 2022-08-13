@@ -1,7 +1,6 @@
-import { Button, Container } from '@mantine/core';
-import Link from 'next/link';
-import React from 'react';
+import { Button, Container, Loader } from '@mantine/core';
 import styles from 'src/styles/Blog.module.css';
+import React from 'react'
 
 const BLOG = [
   {
@@ -28,9 +27,39 @@ const BLOG = [
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
     date: '2022.07.11',
   },
+  {
+    title: 'This is a header',
+    description:
+      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
+    date: '2022.07.11',
+  },
+  {
+    title: 'This is a header',
+    description:
+      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
+    date: '2022.07.11',
+  },
+  {
+    title: 'This is a header',
+    description:
+      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
+    date: '2022.07.11',
+  },
+  {
+    title: 'This is a header',
+    description:
+      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
+    date: '2022.07.11',
+  },
+  {
+    title: 'This is a header',
+    description:
+      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
+    date: '2022.07.11',
+  },
 ];
 
-export const Blog: React.FC = () => {
+const blog:React.FC = () => {
   return (
     <section className='blog'>
       <Container size='lg' className='section_container'>
@@ -44,14 +73,12 @@ export const Blog: React.FC = () => {
             </div>
           );
         })}
-        <Link href='/blog'>
-          <a>
-            <Button className={styles.blog_button} color='dark' radius='xl' size='md'>
-              View All
-            </Button>
-          </a>
-        </Link>
+        <div className='flex justify-center items-center pt-6 pb-6'>
+          <Loader color='pink' />
+        </div>
       </Container>
     </section>
   );
-};
+}
+
+export default blog;

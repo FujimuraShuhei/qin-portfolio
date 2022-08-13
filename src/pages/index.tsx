@@ -5,7 +5,6 @@ import { Blog } from 'src/components/Blog';
 import { Portfolio } from 'src/components/Portfolio';
 import { Github } from 'src/components/Github';
 import { Twitter } from 'src/components/Twitter';
-import { Footer } from 'src/components/Footer';
 
 const Home = () => {
   return (
