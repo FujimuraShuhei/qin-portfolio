@@ -10,18 +10,21 @@ interface PORTFOLIO {
 
 const PORTFOLIO = [
   {
+    id: 1,
     title: 'IT KINGDOM',
     description:
       '当サロンのLPページ。React、Next.js、TypeScriptなどのモダンな技術を用いて作られています。初心者にちょうど良い難易度の制作物です。',
     date: '2021.1 - 2021.12',
   },
   {
+    id: 2,
     title: 'IT KINGDOM',
     description:
       '当サロンのLPページ。React、Next.js、TypeScriptなどのモダンな技術を用いて作られています。初心者にちょうど良い難易度の制作物です。',
     date: '2021.1 - 2021.12',
   },
   {
+    id: 3,
     title: 'IT KINGDOM',
     description:
       '当サロンのLPページ。React、Next.js、TypeScriptなどのモダンな技術を用いて作られています。初心者にちょうど良い難易度の制作物です。',
@@ -36,7 +39,7 @@ export const Portfolio = () => {
         <h2 className={styles.portfolio_h2}>Portfolio</h2>
         {PORTFOLIO.map((portfolio) => {
           return (
-            <div className={styles.portfolio_box}>
+            <div key={portfolio.id} className={styles.portfolio_box}>
               <AspectRatio ratio={2 / 1}>
                 <Image fit='contain' src='yakei01.jpg' />
               </AspectRatio>
@@ -46,7 +49,9 @@ export const Portfolio = () => {
             </div>
           );
         })}
-        <Button className={styles.portfolio_button} color='dark' radius='xl' size='md'>View All</Button>
+        <Button className={styles.portfolio_button} color='dark' radius='xl' size='md'>
+          View All
+        </Button>
       </Container>
     </section>
   );

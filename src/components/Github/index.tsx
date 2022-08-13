@@ -11,6 +11,7 @@ interface GITHUB {
 
 const GITHUB = [
   {
+    id: 1,
     title: 'lightsound/nexst-tailwind',
     description: 'Next.js starter template.',
   },
@@ -23,7 +24,7 @@ export const Github = () => {
         <h2 className={styles.section_h2_title}>Github</h2>
         {GITHUB.map((github) => {
           return (
-            <div className={styles.section_box}>
+            <div key={github.id} className={styles.section_box}>
               <h3 className={styles.section_title_h3}>{github.title}</h3>
               <p className={styles.section_description}>{github.description}</p>
               <p className={styles.portfolio_date}></p>

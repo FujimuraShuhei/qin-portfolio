@@ -5,6 +5,7 @@ import styles from 'src/styles/Twitter.module.css';
 
 const TWITTER = [
   {
+    id: 1,
     user_name: 'しゅーへい',
     user_id: '@shushu308',
     date: '・5月25日',
@@ -13,6 +14,7 @@ const TWITTER = [
     link: 'https://www.noway-form.com/ja',
   },
   {
+    id: 2,
     user_name: 'しゅーへい',
     user_id: '@shushu308',
     date: '・5月25日',
@@ -21,6 +23,7 @@ const TWITTER = [
     link: 'https://www.noway-form.com/ja',
   },
   {
+    id: 3,
     user_name: 'しゅーへい',
     user_id: '@shushu308',
     date: '・5月25日',
@@ -37,7 +40,7 @@ export const Twitter = () => {
         <h2 className={styles.section_h2_title}>Twitter</h2>
         {TWITTER.map((twitter) => {
           return (
-            <div className='mt-10'>
+            <div key={twitter.id} className='mt-10'>
               <div className='ml-14'>
                 <div className='flex items-center mb-2'>
                   <h3 className={styles.section_title_h3}>{twitter.user_name}</h3>
